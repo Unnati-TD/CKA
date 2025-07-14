@@ -1,17 +1,15 @@
 # 📁 Kubernetes YAML Templates for CKA Practice
 
-This folder contains a collection of Kubernetes YAML templates that align with the **Certified Kubernetes Administrator (CKA)** exam curriculum. These files are designed to help learners understand and practice key Kubernetes concepts hands-on using `kubectl`.
+This folder contains Kubernetes YAML templates aligned with the **Certified Kubernetes Administrator (CKA)** curriculum.
+
+Each file is intended for **manual practice** — download it using `curl`, make changes if needed, and then apply it to your cluster.
 
 ---
 
-## 🚀 How to Use
+## 🚀 How to Use (with `curl` + modify before apply)
 
-1. Ensure you have a Kubernetes cluster running.
-2. Clone this repo and navigate to the `YML-Template` folder:
+You can fetch any template file using `curl`:
 
-   ```bash
-   git clone https://github.com/Unnati-TD/CKA.git
-   cd CKA/YML-Template
-   ```
-
-   
+```bash
+curl -O https://raw.githubusercontent.com/Unnati-TD/CKA/main/YML-Template/<file-name>.yaml
+```
