@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: daemonset-name         # Replace with DaemonSet name
+spec:
+  selector:
+    matchLabels:
+      app: myapp               # Replace with label
+  template:
+    metadata:
+      labels:
+        app: myapp             # Must match selector above
+    spec:
+      containers:
+        - name: container-name # Replace with container name
+          image: image-name    # Replace with image (e.g., busybox)
+          ports:
+            - containerPort: 80
+

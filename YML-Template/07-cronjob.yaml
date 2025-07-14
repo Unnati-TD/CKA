@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: cronjob-name            # Replace with CronJob name
+spec:
+  schedule: "*/5 * * * *"       # Replace with desired cron schedule (runs every 5 mins)
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: container-name  # Replace with container name
+              image: image-name     # Replace with image
+              args: ["echo", "Hello from CronJob!"]  # Command to run
+          restartPolicy: OnFailure
