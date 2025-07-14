@@ -6,7 +6,7 @@ This folder contains a collection of Kubernetes YAML templates that align with t
 
 ## 🚀 How to Use
 
-1. Ensure you have a Kubernetes cluster running (e.g., via **Minikube**, **kind**, or a managed service like **EKS/GKE**).
+1. Ensure you have a Kubernetes cluster running.
 2. Clone this repo and navigate to the `YML-Template` folder:
 
    ```bash
