@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-name          # Replace with ConfigMap name
+data:
+  APP_ENV: "production"         # Add key-value pairs as needed
+  LOG_LEVEL: "debug"

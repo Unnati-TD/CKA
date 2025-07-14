@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: replicaset-name        # Replace with ReplicaSet name
+spec:
+  replicas: 3                  # Replace with number of replicas
+  selector:
+    matchLabels:
+      app: myapp               # Replace with label selector
+  template:
+    metadata:
+      labels:
+        app: myapp             # Should match selector above
+    spec:
+      containers:
+        - name: container-name # Replace with container name
+          image: image-name    # Replace with image (e.g., nginx:alpine)
+          ports:
+            - containerPort: 80

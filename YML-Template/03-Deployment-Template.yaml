@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-name        # Replace with Deployment name
+spec:
+  replicas: 2                  # Set desired number of replicas
+  selector:
+    matchLabels:
+      app: myapp               # Replace with appropriate label
+  template:
+    metadata:
+      labels:
+        app: myapp             # Must match selector above
+    spec:
+      containers:
+        - name: container-name # Replace with container name
+          image: image-name    # Replace with image (e.g., httpd)
+          ports:
+            - containerPort: 80
