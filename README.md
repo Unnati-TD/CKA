@@ -55,6 +55,6 @@ kubectl apply -f 4-deployment.yaml
 `Note: These templates are intentionally minimal. Feel free to add labels, annotations, limits, and probes as per your learning goals.`
 
 Happy Learning & Good Luck with CKA! ☸️
-Made with ❤️ by Team Unnati
 
+Made with ❤️ by `Team Unnati`
 
