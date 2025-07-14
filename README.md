@@ -1,4 +1,4 @@
-# 📁 Kubernetes YAML Templates for CKA Practice
+# Kubernetes YAML Templates for CKA Practice
 
 This folder contains Kubernetes YAML templates aligned with the **Certified Kubernetes Administrator (CKA)** curriculum.
 
@@ -6,7 +6,7 @@ Each file is intended for **manual practice** — download it using `curl`, make
 
 ---
 
-## 🚀 How to Use (with `curl` + modify before apply)
+## How to Use (with `curl` + modify before apply)
 
 You can fetch any template file using `curl`:
 
