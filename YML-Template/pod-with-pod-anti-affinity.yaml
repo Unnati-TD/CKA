@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-anti-affinity-demo
+spec:
+  affinity:
+    podAntiAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchExpressions:
+              - key: # INSERT POD LABEL KEY
+                operator: In
+                values:
+                  - # INSERT VALUE
+          topologyKey: # INSERT TOPOLOGY KEY (e.g., kubernetes.io/hostname)
+  containers:
+    - name: app-container
+      image: # INSERT IMAGE
+      ports:
+        - containerPort: # INSERT PORT
