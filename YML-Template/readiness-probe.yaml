@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: readiness-probe-demo
+spec:
+  containers:
+    - name: app-container
+      image: # INSERT YOUR IMAGE
+      ports:
+        - containerPort: # INSERT PORT
+      readinessProbe:
+        httpGet:
+          path: # INSERT PATH
+          port: # INSERT PORT
+        initialDelaySeconds: 5
+        periodSeconds: 3
+        timeoutSeconds: 1
+        failureThreshold: 3
+        successThreshold: 1
