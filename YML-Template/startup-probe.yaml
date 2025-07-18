@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: startup-probe-demo
+spec:
+  containers:
+    - name: app-container
+      image: # INSERT YOUR IMAGE
+      ports:
+        - containerPort: # INSERT PORT
+      startupProbe:
+        httpGet:
+          path: # INSERT PATH
+          port: # INSERT PORT
+        initialDelaySeconds: 0
+        periodSeconds: 10
+        failureThreshold: 30
